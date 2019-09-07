@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#90CAF9</color>
+    <color name="dodger_blue">#3da0ff</color>
+    <color name="deep_sky_blue">#0079ff</color>
+    <color name="white">#ffffff</color>
+    <color name="blue_grey">#7e94a7</color>
+    <color name="navy">#00294c</color>
+
+</resources>

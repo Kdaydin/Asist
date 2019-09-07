@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Asist</string>
+    <string name="tl_currency">%1$d TL</string>
+    <string name="starting_from">Starting From</string>
+    <string name="welcome_title">Good morning!</string>
+    <string name="welcome_header">How can we help you?</string>
+</resources>

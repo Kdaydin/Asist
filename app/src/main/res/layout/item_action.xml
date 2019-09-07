@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/item_action_bg">
+
+        <ImageView
+            android:id="@+id/actionIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_default="wrap"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="18dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/actionTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:src="@drawable/ic_breakdown_64_px" />
+
+        <TextView
+            android:id="@+id/actionTitle"
+            style="@style/ButtonTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="42dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionIcon"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/actionFooter"
+            style="@style/ButtonFooter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="end"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/actionFooterAmount"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="wrap"
+            tools:text="Starting from" />
+
+        <TextView
+            android:id="@+id/actionFooterAmount"
+            style="@style/ButtonFooterAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="@id/actionFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/actionFooter"
+            app:layout_constraintWidth_default="wrap"
+            tools:text="90TL" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
